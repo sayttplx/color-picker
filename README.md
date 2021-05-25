@@ -1,6 +1,6 @@
 # Color APP
 
-## Javascript
+
 ```js
 function hexCheck(str) {
   regexp = /^[0-9a-fA-F-]+$/;
