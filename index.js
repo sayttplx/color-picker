@@ -1,5 +1,7 @@
 const hexInput = document.querySelector('#hexInput');
 const inputColor = document.querySelector('#inputColor');
+const alteredColor = document.querySelector('#alteredColor');
+const alteredColorText = document.querySelector('#alteredColorText');
 const sliderText = document.querySelector('#sliderText');
 const slider = document.querySelector('#slider');
 const color = '#000000'
@@ -79,13 +81,20 @@ const alterColor = (hex, percentage) => {
 }
 
 const increaseWithin0To255 = (hex, amount) => {
-  const newHex = hex + amount;
-  if(newHex > 255) return 255;
-  if(newHex < 0) return 0;
-  return newHex
+  // const newHex = hex + amount;
+  // if(newHex > 255) return 255;
+  // if(newHex < 0) return 0;
+  // return newHex;  
+  return Math.min(255, Math.max(0, hex + amount));
 }
 
 slider.addEventListener('input', () => {
-  console.log(slider.value)
+  // check if hex is valid
+  if(!isValidHex(hexInput.value)) return;
+  // update the altered color
   sliderText.textContent = `${slider.value}%`;
+  // get the altered hex value
+  const alteredHex = alterColor(hexInput.value, slider.value);
+  alteredColor.style.backgroundColor = alteredHex;
+  alteredColorText.innerText = `Altered Color ${alteredHex}`
 })
