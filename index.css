@@ -4,26 +4,36 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
     background-color: #3e4560;
     color: white;
 }
 
+svg {
+    width: 60px;
+    height: 60px;
+}
+
 .container {
     padding: 0 10px;
-    max-width: 354px;
+    max-width: 350px;
     margin: 0 auto;
 }
 
 .title {
     text-align: center;
-    margin: 20px;
     color: #d6d5ac;
+    font-size: 60px;
+}
+
+.title h1 {
+    
+    margin: 0;
 }
 
 label {
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
@@ -32,14 +42,44 @@ input {
 }
 
 input[type="text"] {
+    font-family: 'Rubik Mono One', sans-serif;
+    box-sizing: border-box;
     padding: 15px 10px;
     border-radius: 3px;
     border: none;
     font-size: 2rem;
+    width: 100%;
 }
-input[type="range"] {
-    width: 354px;
-    height: 1rem;
+
+
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 25px;
+    outline: none;
+    opacity: 0.7;
+    transition: .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+  }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background: #d6d5ac;
+    cursor: pointer;
+  }
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
 }
 
 .box {
@@ -47,4 +87,5 @@ input[type="range"] {
     width: 100%;
     background-color: #6441a5;
 }
+
 

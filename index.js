@@ -4,7 +4,7 @@ const alteredColor = document.querySelector('#alteredColor');
 const alteredColorText = document.querySelector('#alteredColorText');
 const sliderText = document.querySelector('#sliderText');
 const slider = document.querySelector('#slider');
-const color = '#000000'
+const color = '#000000';
 
 
 function hexCheck(str) {
@@ -96,5 +96,5 @@ slider.addEventListener('input', () => {
   // get the altered hex value
   const alteredHex = alterColor(hexInput.value, slider.value);
   alteredColor.style.backgroundColor = alteredHex;
-  alteredColorText.innerText = `Altered Color ${alteredHex}`
+  alteredColorText.innerText = `Altered Color - ${alteredHex}`
 })
