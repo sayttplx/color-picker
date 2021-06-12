@@ -11,7 +11,7 @@ body {
 
 .container {
     padding: 0 10px;
-    max-width: 300px;
+    max-width: 354px;
     margin: 0 auto;
 }
 
@@ -32,14 +32,19 @@ input {
 }
 
 input[type="text"] {
-    padding: 5px 10px;
+    padding: 15px 10px;
     border-radius: 3px;
     border: none;
+    font-size: 2rem;
+}
+input[type="range"] {
+    width: 354px;
+    height: 1rem;
 }
 
 .box {
     height: 100px;
     width: 100%;
-    background-color: #c6d5ac;
+    background-color: #6441a5;
 }
 
