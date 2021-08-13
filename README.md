@@ -1,4 +1,4 @@
-# Color APP
+# Color
 
 
 ![alt text](/color.png "Image of app")
