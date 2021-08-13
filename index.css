@@ -6,7 +6,7 @@
 body {
     max-width: 600px;
     margin: 0 auto;
-    padding-top: 5rem;
+    padding-top: 10rem;
     font-family: 'Rubik Mono One', sans-serif;
     
     color: black;
@@ -27,7 +27,7 @@ svg {
 
 .title {
     text-align: center;
-    color: #000000;
+    color: black;
     font-size: 60px;
 }
 
@@ -75,7 +75,7 @@ input[type="text"] {
     appearance: none;
     width: 40px;
     height: 40px;
-    background: #000000;
+    background: black;
     cursor: pointer;
   }
 
