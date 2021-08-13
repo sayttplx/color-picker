@@ -1,6 +1,8 @@
 # Color APP
 
 
+![alt text](/color.png "Image of app")
+
 ```js
 function hexCheck(str) {
   regexp = /^[0-9a-fA-F-]+$/;
