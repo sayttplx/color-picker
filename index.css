@@ -4,9 +4,12 @@
 }
 
 body {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 10rem;
     font-family: 'Rubik Mono One', sans-serif;
-    background-color: #3e4560;
-    color: white;
+    
+    color: black;
 }
 
 svg {
@@ -15,14 +18,16 @@ svg {
 }
 
 .container {
-    padding: 0 10px;
+    padding: 2rem;
     max-width: 350px;
     margin: 0 auto;
+    background-color: #b4b4b4;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .title {
     text-align: center;
-    color: #d6d5ac;
+    color: #000000;
     font-size: 60px;
 }
 
@@ -70,7 +75,7 @@ input[type="text"] {
     appearance: none;
     width: 40px;
     height: 40px;
-    background: #d6d5ac;
+    background: #000000;
     cursor: pointer;
   }
 
